@@ -8,7 +8,7 @@ function Home() {
             <Nav />
             <div className='content'>
                 <h1>Welcome to <span>LINQ-U</span>, where all your beauty and health perfessions come to <i>you</i>.</h1>
-                <button>Find your local business</button>
+                <button>Learn more about our services</button>
             </div>
         </div>
     )

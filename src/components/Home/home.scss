@@ -24,7 +24,11 @@
         }
         button {
             @include btn2;
+            @include BoxShadow(1);
             margin-top: 1.5rem;
+            &:hover {
+                @include BoxShadow(4);
+            }
         }
     }
 }

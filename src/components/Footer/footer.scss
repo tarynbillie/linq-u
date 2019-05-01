@@ -6,13 +6,14 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     padding: 1.5rem 5rem;
-    height: 40vh;
+    height: 35vh;
     background-color: $whiteSmoke;
     .block {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        justify-items: flex-start;
         color: $well;
+        padding-top: 2rem;
         &__left {
             display: flex;
             flex-direction: column;
@@ -24,10 +25,17 @@ footer {
         &__center {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            width: 35%;
             .detail {
                 display: flex;
                 flex-direction: column;
+                h5 {
+                    margin: 0.5rem 0;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
             }
         }
         &__right {
@@ -40,6 +48,13 @@ footer {
             .social-media {
                 display: flex;
                 justify-content: space-between;
+                svg {
+                    cursor: pointer;
+                    transition: all 0.2s ease-in-out;
+                    &:hover path{
+                        fill: $secondPrimary;
+                    }
+                }
             }
             
         }

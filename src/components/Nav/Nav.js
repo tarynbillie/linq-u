@@ -27,7 +27,7 @@ export default class Nav extends Component {
                 <ul role="navigation">
                     <li>About Us</li>
                     <li>Contact Us</li>
-                    <li>Login</li>
+                    <li>Sign up</li>
                     <li>
                         <button className='cta'>
                             Book now

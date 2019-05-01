@@ -1,0 +1,53 @@
+@import '../../utils/styles/variables.scss';
+@import '../../utils/styles/mixins.scss';
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem 5rem;
+    height: 40vh;
+    background-color: $whiteSmoke;
+    .block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $well;
+        &__left {
+            display: flex;
+            flex-direction: column;
+            h1 {
+                font-size: 30px;
+                color: $primary; 
+            }
+        }
+        &__center {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .detail {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &__right {
+            display: flex;
+            flex-direction: column;
+            h2 {
+                font-size: 20px;
+                color: $well; 
+            }
+            .social-media {
+                display: flex;
+                justify-content: space-between;
+            }
+            
+        }
+    }
+    .terms {
+        text-align: center;
+        p {
+            text-decoration: underline;
+        }
+    }
+}

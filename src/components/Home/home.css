@@ -1,0 +1,57 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
+/* Grey scale */
+/* Responsive Breakpoints */
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
+/* Grey scale */
+/* Responsive Breakpoints */
+.container {
+  width: 100%;
+  height: 120vh;
+  overflow-x: hidden;
+  background: url("../../assets/christelle-bourgeois.jpg");
+  background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 0;
+}
+
+.container .content {
+  position: relative;
+  top: 20%;
+  left: 10%;
+  width: 32%;
+  color: #fff;
+  font-family: 'Roboto';
+}
+
+.container .content h1 {
+  font-size: 54px;
+}
+
+.container .content h1 span {
+  color: #FDD05D;
+}
+
+.container .content button {
+  width: 18rem;
+  height: 3rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #FDD05D;
+  font-size: 20px;
+  color: #484848;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-top: 1.5rem;
+}
+
+.container .content button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=home.css.map */

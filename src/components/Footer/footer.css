@@ -19,6 +19,8 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: absolute;
+  top: 100%;
   padding: 1.5rem 5rem;
   height: 35vh;
   background-color: #f5f5f5;
@@ -28,6 +30,8 @@ footer .block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -47,17 +51,21 @@ footer .block__left {
 }
 
 footer .block__left h1 {
+  margin: 0;
   font-size: 30px;
   color: #FDD05D;
+  font-family: 'Oswald', sans-serif;
 }
 
 footer .block__center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 35%;
 }
 
@@ -69,6 +77,11 @@ footer .block__center .detail {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 0.5rem 0.5rem 0;
+}
+
+footer .block__center .detail h3 {
+  color: #121212;
 }
 
 footer .block__center .detail h5 {
@@ -92,7 +105,7 @@ footer .block__right {
 
 footer .block__right h2 {
   font-size: 20px;
-  color: #484848;
+  color: #121212;
 }
 
 footer .block__right .social-media {
@@ -111,7 +124,7 @@ footer .block__right .social-media svg {
 }
 
 footer .block__right .social-media svg:hover path {
-  fill: #D49813;
+  fill: #484848;
 }
 
 footer .terms {
@@ -119,6 +132,7 @@ footer .terms {
 }
 
 footer .terms p {
+  cursor: pointer;
   text-decoration: underline;
 }
 /*# sourceMappingURL=footer.css.map */

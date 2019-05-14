@@ -2,67 +2,77 @@
 @import '../../utils/styles/mixins.scss';
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1.5rem 5rem;
-    height: 35vh;
-    background-color: $whiteSmoke;
-    .block {
-        display: flex;
-        justify-content: space-between;
-        justify-items: flex-start;
-        color: $well;
-        padding-top: 2rem;
-        &__left {
-            display: flex;
-            flex-direction: column;
-            h1 {
-                font-size: 30px;
-                color: $primary; 
-            }
-        }
-        &__center {
-            display: flex;
-            justify-content: space-between;
-            width: 35%;
-            .detail {
-                display: flex;
-                flex-direction: column;
-                h5 {
-                    margin: 0.5rem 0;
-                    cursor: pointer;
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
-        }
-        &__right {
-            display: flex;
-            flex-direction: column;
-            h2 {
-                font-size: 20px;
-                color: $well; 
-            }
-            .social-media {
-                display: flex;
-                justify-content: space-between;
-                svg {
-                    cursor: pointer;
-                    transition: all 0.2s ease-in-out;
-                    &:hover path{
-                        fill: $secondPrimary;
-                    }
-                }
-            }
-            
-        }
-    }
-    .terms {
-        text-align: center;
-        p {
-            text-decoration: underline;
-        }
-    }
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: absolute;
+	top: 100%;
+	padding: 1.5rem 5rem;
+	height: 35vh;
+	background-color: $whiteSmoke;
+	.block {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		justify-items: flex-start;
+		color: $well;
+		padding-top: 2rem;
+		&__left {
+			display: flex;
+			flex-direction: column;
+			h1 {
+				margin: 0;
+				font-size: 30px;
+				color: $primary;
+				font-family: 'Oswald', sans-serif;
+			}
+		}
+		&__center {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			width: 35%;
+			.detail {
+				display: flex;
+				flex-direction: column;
+				margin: 0 0.5rem 0.5rem 0;
+				h3 {
+					color: $burnt;
+				}
+				h5 {
+					margin: 0.5rem 0;
+					cursor: pointer;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		&__right {
+			display: flex;
+			flex-direction: column;
+			h2 {
+				font-size: 20px;
+				color: $burnt;
+			}
+			.social-media {
+				display: flex;
+				justify-content: space-between;
+				svg {
+					cursor: pointer;
+					transition: all 0.2s ease-in-out;
+					&:hover path {
+						fill: $well;
+					}
+				}
+			}
+		}
+	}
+	.terms {
+		text-align: center;
+		p {
+			cursor: pointer;
+			text-decoration: underline;
+		}
+	}
 }

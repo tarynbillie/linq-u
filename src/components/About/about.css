@@ -1,0 +1,64 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
+/* Grey scale */
+/* Responsive Breakpoints */
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
+/* Grey scale */
+/* Responsive Breakpoints */
+#about {
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  border-radius: 12px;
+  top: 25%;
+  left: 15%;
+  width: 70%;
+  height: 50%;
+}
+
+#about .container-about {
+  width: 80%;
+  margin: 3rem 5rem;
+  font-family: 'Roboto';
+  line-height: 2rem;
+}
+
+#about .container-about h1 {
+  font-size: 44px;
+}
+
+#about .container-about p {
+  font-size: 18px;
+}
+
+#about .container-service h2 {
+  margin-left: 5rem;
+}
+
+#about .container-service .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 90%;
+  width: 80%;
+  margin-left: 8rem;
+}
+
+#about .container-service .details img {
+  margin: 1.5rem 0;
+}
+/*# sourceMappingURL=about.css.map */

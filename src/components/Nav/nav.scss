@@ -2,46 +2,53 @@
 @import '../../utils/styles/mixins.scss';
 
 #main {
-    @include BoxShadow(2);
-    display: flex;
-    background: $rare;
-    font-family: 'Roboto';
-    top: 0;
-    width: 100%;
-    height: 6rem;
-    transition: all 0.5s;
-    position: fixed;
-    z-index: 1;
-    .logo {
-        margin: 1.3rem 1rem 1.3rem 4rem;
-        margin-right: auto;
-        color: $primary;
-        font-size: 40px;
-    }
-    ul {
-        display: flex;
-        width: 45%;
-        margin-right: 2.5rem;
-        list-style: none;
-        color: $well;
-        li {
-            flex: 1;
-            text-align: center;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            font-size: 20px;
-            cursor: pointer;
-        }
-        .cta {
-            @include btn1;
-            @include BoxShadow(1);
-            &:hover {
-                @include BoxShadow(4);
-            }
-        }
-    }
+	@include BoxShadow(2);
+	display: flex;
+	background: $rare;
+	font-family: 'Roboto';
+	top: 0;
+	width: 100%;
+	height: 6rem;
+	transition: all 0.5s;
+	position: fixed;
+	z-index: 1;
+	.logo {
+		margin: 1.3rem 1rem 1.3rem 4rem;
+		margin-right: auto;
+		font-family: 'Oswald', sans-serif;
+		color: $primary;
+		font-size: 40px;
+	}
+	ul {
+		display: flex;
+		width: 45%;
+		margin-right: 2.5rem;
+		list-style: none;
+		color: $well;
+		.link {
+			color: $burnt;
+			text-decoration: none;
+		}
+		li {
+			flex: 1;
+			text-align: center;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			font-size: 20px;
+			cursor: pointer;
+		}
+		.signin {
+			@include btn3;
+			&:hover {
+				@include BoxShadow(1);
+			}
+		}
+		.cta {
+			@include btn1;
+			&:hover {
+				@include BoxShadow(1);
+			}
+		}
+	}
 }
-
-
-

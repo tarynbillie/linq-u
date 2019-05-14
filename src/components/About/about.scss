@@ -1,0 +1,43 @@
+@import '../../utils/styles/variables.scss';
+@import '../../utils/styles/mixins.scss';
+
+#about {
+	@include BoxShadow(4);
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	border-radius: 12px;
+	top: 25%;
+	left: 15%;
+	width: 70%;
+	height: 50%;
+	.container-about {
+		width: 80%;
+		margin: 3rem 5rem;
+		font-family: 'Roboto';
+		line-height: 2rem;
+		h1 {
+			font-size: 44px;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+	.container-service {
+		h2 {
+			margin-left: 5rem;
+		}
+		.details {
+			display: flex;
+			justify-content: space-between;
+			// flex-wrap: wrap;
+			position: absolute;
+			top: 90%;
+			width: 80%;
+			margin-left: 8rem;
+			img {
+				margin: 1.5rem 0;
+			}
+		}
+	}
+}

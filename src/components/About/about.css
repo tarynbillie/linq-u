@@ -8,7 +8,7 @@
 /* Color Theme Swatches in HSLA */
 /* Grey scale */
 /* Responsive Breakpoints */
-#about {
+.background #about {
   -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   display: -webkit-box;
@@ -26,26 +26,28 @@
   height: 50%;
 }
 
-#about .container-about {
+.background #about .container-about {
   width: 80%;
   margin: 3rem 5rem;
   font-family: 'Roboto';
   line-height: 2rem;
 }
 
-#about .container-about h1 {
+.background #about .container-about h1 {
+  color: #D49813;
   font-size: 44px;
 }
 
-#about .container-about p {
+.background #about .container-about p {
   font-size: 18px;
 }
 
-#about .container-service h2 {
+.background #about .container-service h2 {
+  color: #D49813;
   margin-left: 5rem;
 }
 
-#about .container-service .details {
+.background #about .container-service .details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,7 +60,7 @@
   margin-left: 8rem;
 }
 
-#about .container-service .details img {
+.background #about .container-service .details img {
   margin: 1.5rem 0;
 }
 /*# sourceMappingURL=about.css.map */

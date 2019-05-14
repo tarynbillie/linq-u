@@ -9,7 +9,7 @@ import './about.scss';
 export default class About extends Component {
 	render () {
 		return (
-			<div>
+			<div className='background'>
 				<Nav />
 				<section id='about'>
 					<div className='container-about'>

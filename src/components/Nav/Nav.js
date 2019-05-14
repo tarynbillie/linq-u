@@ -22,21 +22,20 @@ export default class Nav extends Component {
 		return (
 			<nav id='main'>
 				<h1 className='logo'>LINQ-U</h1>
-				<ul role='navigation'>
+				<div id='nav'>
 					<Link to={'/home'} className='link'>
-						<li>Home</li>
+						<h3>Home</h3>
 					</Link>
 					<Link to={'/about'} className='link'>
-						<li>About</li>
+						<h3>About</h3>
 					</Link>
-					<li>Contact</li>
-					<li>
-						<button className='signin'>Sign In</button>
-					</li>
-					<li>
-						<button className='cta'>Book now</button>
-					</li>
-				</ul>
+					<Link to={'/contact'} className='link'>
+						<h3>Contact</h3>
+					</Link>
+					<button className='signin'>Sign In</button>
+
+					<button className='cta'>Book now</button>
+				</div>
 			</nav>
 		);
 	}

@@ -4,7 +4,7 @@ import './footer.scss';
 export default class Footer extends Component {
 	render () {
 		return (
-			<footer>
+			<div id='footer'>
 				<section className='block'>
 					<div className='block__left'>
 						<h1 className='logo'>LINQ-U</h1>
@@ -94,7 +94,7 @@ export default class Footer extends Component {
 					<p>Terms and Conditions.</p>
 					<small>© 2019 | Created by Taryn Li | All rights reserved.</small>
 				</div>
-			</footer>
+			</div>
 		);
 	}
 }

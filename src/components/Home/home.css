@@ -11,7 +11,7 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 .home {
   width: 100%;
-  height: 180vh;
+  height: 150vh;
   overflow-x: hidden;
   background: url("../../assets/christelle-bourgeois.png");
   background-size: cover;

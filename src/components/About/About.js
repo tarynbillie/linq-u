@@ -4,7 +4,6 @@ import Card from 'react-bootstrap/Card';
 import Cut from '../../assets/ic_content_cut.svg';
 import Locate from '../../assets/ic_place.svg';
 import Schedule from '../../assets/ic_today.svg';
-import Footer from '../Footer/Footer';
 import './about.scss';
 
 export default class About extends Component {
@@ -78,7 +77,6 @@ export default class About extends Component {
 						</div>
 					</div>
 				</section>
-				<Footer />
 			</div>
 		);
 	}

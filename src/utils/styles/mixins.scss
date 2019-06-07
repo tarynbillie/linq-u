@@ -1,7 +1,7 @@
 @import './variables.scss';
 
 // Material Design Shadows
-@mixin BoxShadow ($dp) {
+@mixin boxShadow ($dp) {
 	@if $dp==0 {
 		box-shadow: none;
 	} @else if $dp==1 {
@@ -70,4 +70,24 @@
 	outline: none;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
+}
+
+// Background Box's
+@mixin backgroundBox {
+	margin-right: auto;
+	z-index: 0;
+	width: 560px;
+	height: 350px;
+	background-color: $primary;
+	opacity: 0.5;
+}
+
+// Team Photos
+@mixin photo {
+	position: absolute;
+	z-index: 10;
+	overflow: hidden;
+	display: block;
+	margin-right: auto;
+	width: 40%;
 }

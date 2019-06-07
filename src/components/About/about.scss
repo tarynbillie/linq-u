@@ -4,14 +4,15 @@
 #about {
 	display: flex;
 	flex-direction: column;
+	position: relative;
 	margin: 0 12rem;
-	height: 100vh;
 	font-family: 'Roboto';
+	// min-height: 100%;
+	height: 100vh;
 	.container-about {
-		@include BoxShadow(4);
-		position: relative;
-		top: 20%;
-		height: 50%;
+		@include boxShadow(4);
+		margin-top: 12rem;
+		height: auto;
 		line-height: 2rem;
 		border-radius: 12px;
 		padding: 0 3rem;
@@ -25,20 +26,21 @@
 		p {
 			font-size: 18px;
 		}
-		h2 {
-			font-family: 'Oswald';
-			margin-top: 4rem;
-			color: $secondPrimary;
-		}
 	}
 	.container-service {
+		height: auto;
+		h2 {
+			margin-top: 3rem;
+			font-family: 'Oswald';
+			color: $secondPrimary;
+		}
 		.details {
 			display: flex;
 			justify-content: space-evenly;
 			flex-wrap: wrap;
 			position: absolute;
 			top: 65%;
-			width: 80%;
+			width: 100%;
 			img {
 				margin: 1.5rem 0;
 			}
@@ -48,15 +50,79 @@
 		}
 	}
 	.team {
+		display: flex;
+		flex-direction: column;
 		position: relative;
-		top: 65%;
-		img {
-			width: 35%;
-			height: auto;
-			border-radius: 12px;
-			object-fit: contain;
-			z-index: 0;
-			overflow: hidden;
+		top: 50%;
+		h1 {
+			font-family: 'Oswald';
+			color: $burnt;
+			border-bottom: 5px solid $primary;
+			width: 50px;
+		}
+		#person-one {
+			display: flex;
+			margin-top: 6.5rem;
+			.photo {
+				#one {
+					@include photo();
+				}
+				#rectangle-one {
+					@include backgroundBox();
+					position: absolute;
+					top: 24%;
+					left: 5%;
+				}
+			}
+			#name-one {
+				font-family: 'Roboto';
+				position: relative;
+				top: 25%;
+				left: 50%;
+				width: 45%;
+				h2 {
+					font-size: 18px;
+					color: $well;
+				}
+				h3 {
+					font-size: 34px;
+					margin-bottom: 2rem;
+					color: $burnt;
+				}
+			}
+		}
+		#person-two {
+			display: flex;
+			padding-top: 20rem;
+			.photo {
+				#two {
+					@include photo();
+					margin-left: 60%;
+					margin-bottom: 5rem;
+				}
+				#rectangle-two {
+					@include backgroundBox();
+					position: absolute;
+					top: 85%;
+					margin-left: 55%;
+				}
+			}
+			#name-two {
+				font-family: 'Roboto';
+				position: relative;
+				top: 55%;
+				left: 45%;
+				// width: 40%;
+				h2 {
+					font-size: 18px;
+					color: $well;
+				}
+				h3 {
+					font-size: 34px;
+					margin-bottom: 2rem;
+					color: $burnt;
+				}
+			}
 		}
 	}
 }

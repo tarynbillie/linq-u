@@ -4,6 +4,8 @@ import Cut from '../../assets/ic_content_cut.svg';
 import Locate from '../../assets/ic_place.svg';
 import Schedule from '../../assets/ic_today.svg';
 import Winta from '../../assets/winta-linqu-photo.jpg';
+import Taryn from '../../assets/Taryn-Li-Photo.png';
+import Footer from '../Footer/Footer';
 import './about.scss';
 
 export default class About extends Component {
@@ -22,9 +24,9 @@ export default class About extends Component {
 						Linq-U simply offers businesses throughout the GTA that seem so out of reach, the opportunity to
 						reach you. We are a platform that links you to the business you trust and love.
 					</p>
-					<h2>How does it work?</h2>
 				</div>
 				<div className='container-service'>
+					<h2>How does it work?</h2>
 					<div className='details'>
 						<Card
 							style={{
@@ -78,7 +80,40 @@ export default class About extends Component {
 				</div>
 				<div className='team'>
 					<h1>Meet the team</h1>
-					<img src={Winta} alt='Winta Hagos' />
+					<div id='person-one'>
+						<div className='photo'>
+							<div id='rectangle-one' />
+							<img id='one' src={Winta} alt='Winta Hagos' />
+						</div>
+						<div id='name-one'>
+							<h2>CEO &amp; Founder</h2>
+							<h3>Winta Hagos</h3>
+							<p>
+								I found my passion for innovation in the health and wellness sector as well as the
+								beauty industry and never looked back. I founded LINQ-U because I saw a problem in the
+								market. I found myself always struggling to make appointments on time or even book
+								appointments. It was at that point I thought, what if my favourite businesses could come
+								to me. Thus, the journey of developing a platform that provides businesses with the
+								opportunity to connect to their clients in the comfort of your own home began.
+							</p>
+						</div>
+					</div>
+					<div id='person-two'>
+						<div className='photo'>
+							<div id='rectangle-two' />
+							<img id='two' src={Taryn} alt='Taryn Li' />
+						</div>
+						<div id='name-two'>
+							<h2>Front End Developer</h2>
+							<h3>Taryn Li</h3>
+							{/* <p>
+								As lead developer for LINQ-U I drive the technical vision and product development. I'm
+								passionate about helping the everyday person with everyday issues. I love everything
+								design and development! When I'm not working you'll find me sailing on Humber Bay, or
+								hiking the Bruce Trail with my doggo.
+							</p> */}
+						</div>
+					</div>
 				</div>
 			</section>
 		);

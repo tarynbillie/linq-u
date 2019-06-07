@@ -27,10 +27,10 @@
 		}
 		button {
 			@include btn2;
-			@include BoxShadow(1);
+			@include boxShadow(1);
 			margin-top: 1.5rem;
 			&:hover {
-				@include BoxShadow(4);
+				@include boxShadow(4);
 			}
 		}
 	}

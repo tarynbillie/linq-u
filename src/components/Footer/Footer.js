@@ -92,7 +92,7 @@ export default class Footer extends Component {
 				</section>
 				<div className='terms'>
 					<p>Terms and Conditions.</p>
-					<small>© 2019 | Created by Taryn Li | All rights reserved.</small>
+					<small>© {new Date().getFullYear()} | Created by Taryn Li | All rights reserved.</small>
 				</div>
 			</div>
 		);

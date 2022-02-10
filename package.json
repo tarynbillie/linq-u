@@ -12,7 +12,7 @@
     "bootstrap-material-design": "^4.1.2",
     "i": "^0.3.6",
     "mdbreact": "^4.15.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "npm": "^6.9.0",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.8",
